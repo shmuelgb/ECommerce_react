@@ -34,6 +34,6 @@ header .right-side {
 }
 .cart-icon span {
   position: absolute;
-  top: 0;
-  right: 6px;
+  top: 7px;
+  left: -6px;
 }

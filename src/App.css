@@ -1,8 +1,8 @@
 :root {
-  --color-1: #66806a;
-  --color-2: #b4c6a6;
-  --color-3: #ffc286;
-  --color-4: #fff1af;
+  --color-1: #a19882;
+  --color-2: #c2b8a3;
+  --color-3: #e6ddc6;
+  --color-4: #fef7dc;
 }
 
 * {
@@ -12,14 +12,14 @@
 }
 .App {
   font-family: Arial, Helvetica, sans-serif;
-  color: var(--color-2);
+  color: var(--color-1);
   background-color: var(--color-4);
   min-height: 100vh;
 }
 
 a {
   text-decoration: none;
-  color: var(--color-3);
+  color: var(--color-4);
 }
 
 .homepage {
@@ -27,6 +27,20 @@ a {
   justify-content: center;
   align-items: center;
   min-height: 93vh;
+}
+
+.homepage a {
+  background-color: var(--color-1);
+  padding: 8px 20px;
+  border-radius: 5px;
+  color: var(--color-4);
+  font-size: 1.5rem;
+  transition: 0.3 all;
+}
+
+.homepage a:hover {
+  background-color: var(--color-2);
+  color: var(--color-4);
 }
 
 .place-holder {
