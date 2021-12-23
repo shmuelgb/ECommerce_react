@@ -18,13 +18,18 @@ export default function Cart(props) {
           ></figure>
           <div className="cart__item_details">
             <p>{item.title}</p>
-            <button onClick={() => handleIncreaseAmount(index)}>+</button>
-            Quantity: {item.quantity}
-            <button onClick={() => handleDecreaseAmount(index)}>-</button>
-            <br />
-            <button onClick={() => handleRemoveFromCart(index)}>
-              Remove Item
-            </button>
+            <div className="cart-control">
+              <button onClick={() => handleIncreaseAmount(index)}>+</button>
+              Quantity: {item.quantity}
+              <button onClick={() => handleDecreaseAmount(index)}>-</button>
+              <br />
+              <button
+                className="cart-control-button-remove"
+                onClick={() => handleRemoveFromCart(index)}
+              >
+                Remove Item
+              </button>
+            </div>
           </div>
         </div>
       );
